@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Luis Mesa</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/aos.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/boxEffect.css">
+    <link href='//fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<canvas id="myCanvas"></canvas>
+
+<div class="principal" onmousedown="ponerParticula(event)">
+
+    <div class="principal-interna row">
+
+        <div class="col-md-3 col-sm-2 col-xs-1"></div>
+        <div class="col-md-6 col-sm-8 col-xs-10">
+
+            <div class="principal-texto">
+                <h1 class="principal-titulo">Luis Mesa</h1>
+                <p class="lead">Soy estudiante de Ingeniería de Sistemas y busco desempeñarme como full-stack web developer, púes esta profesión me ofrece la posibilidad de aprender algo nuevo cada día.</p>
+                <a class="btn-contactame btn btn-lg btn-default " data-toggle="modal" data-target="#contactoModal" onclick="iniciarMail()">Contáctame</a>
+
+            </div>
+
+        </div>
+        <div class="col-md-3 col-sm-2 col-xs-1"></div>
+
+    </div>
+
+</div>
+
+<div id="transcroller-body" class="aos-all">
+    <div class="info">
+        <div class="container-fluid">
+            <div class="row info-interna">
+                <div class="aos-item" data-aos="fade-right">
+                    <div class="aos-item__inner">
+                        <div class="col-md-1 col-sm-1">
+                        </div>
+
+                        <div class="col-md-5 col-sm-5">
+                            <div class="info-titulo">
+                                <h2>Información</h2>
+                            </div>
+                            <div class="info-texto">
+                                <p>Soy de Duitama, Boyacá y con mis 20 años de edad he decidido dedicarme a la informática. No la veo solo como un trabajo, por el contrario en esta veo la oportunidad de crecer como persona y de servir a los demás. Más aún no hay otra profesión en la que pueda divertirme y entretenerme como esta lo hace.</p>
+                                <p>Principalmente me encuentro interesado en lo que al desarrollo de aplicaciones web se refiere, esto incluye bases de datos, back-end y front-end. Además de esto he tenido la oportunidad de enseñar programación orientada a objetos a varios estudiantes y he de admitir que esta es una de las experiencias más enriquecedoras que he tenido, esto me ha llevado a considerar desempeñarme en un ambiente académico a largo plazo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-sm-1">
+                </div>
+                <div class="aos-item" data-aos="fade-right">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class=" col-md-8 ">
+                                <div class="aos-item__inner">
+                                    <div class="box" id="cajaPersonal">
+                                        <div class="box__circle box__circle--grey"></div>
+                                        <div class="box__icon">
+                                            <img class="info-foto" src="data/imagenes/fotoPersonal7.JPG">
+                                        </div>
+                                        <p class="box__text">
+                                            <a href="https://twitter.com/luisMesa25" class="icono">
+                                                <i class="ion-social-twitter"></i>
+                                            </a>
+                                            <a href="https://www.facebook.com/luis.fajardo.125323" class="icono">
+                                                <i class="ion-social-facebook"></i>
+                                            </a>
+                                            <a href="https://github.com/LuisMesa" class="icono">
+                                                <i class="ion-social-github"></i>
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/luis-andres-mesa-fajardo-1aa859124/" class="icono">
+                                                <i class="ion-social-linkedin"></i>
+                                            </a>
+
+                                            <a class="btn-contactame btn btn-lg btn-default " data-toggle="modal" data-target="#contactoModal" onclick="iniciarMail()">Contáctame</a>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 "></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1 col-sm-1">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="skills">
+        <div class="container-fluid">
+            <div class="row skills-interna">
+                <div class="aos-item" data-aos="fade-down">
+                    <div class="col-md-1 col-sm-1" id="colVacia1">
+                        <canvas id="canvasLenguajes"></canvas>
+                    </div>
+                    <div id="habilidades" class="col-md-4 col-sm-4">
+                        <div class="skills-titulo">
+                            <h2>Tecnologías y Herramientas</h2>
+                        </div>
+                        <div class="skills-texto">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-sm-1">
+                </div>
+                <div class="aos-item" data-aos="fade-down">
+                    <div class="col-md-5 col-sm-5">
+
+                        <div class="skills-titulo">
+                            <h2>Estudios y Habilidades</h2>
+                        </div>
+                        <div class="skills-texto">
+                            <p>Actualmente estudio Ingeniería de Sistemas y Computación en la Universidad de los Andes y a lo largo de mi carrera he adquirido conocimientos en diferentes campos. Estos incluyen infraestructura computacional y de comunicaciones, sistemas transaccionales y bases de datos, arquitectura empresarial y de software, algoritmos formales y desarrollo con tecnologías web.</p>
+                            <p>A pesar de las diferentes áreas en las que he incursionado mi atención está puesta sobre el desarrollo web y la programación, así que trabajo principalmente con lenguajes como Java, Scala, JavaScript, SQL y CSS. Además de esto he manipulado tecnologías como play!-framework y Node.js.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="othersLinks">
+        <div class="container-fluid">
+            <div class="row skills-interna">
+                <div class="aos-item" data-aos="fade-up">
+
+                    <div class="col-md-1 col-sm-1">
+                    </div>
+                    <div id="othersLinks-contenido" class="col-md-10 col-sm-10">
+                        <div class="othersLinks-titulo">
+                            <h2>Enlaces de interés</h2>
+                        </div>
+
+                        <div class="othersLinks-boxes">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 sinPadding">
+                                    <div class="box cajaEnlace">
+                                        <div class="box__circle box__circle--grey"></div>
+                                        <div class="box__icon">
+                                            <img class="enlace-foto" src="data/imagenes/cupi.png">
+                                        </div>
+                                        <p class="box__text texto_cajaEnlace">
+                                            Desde hace dos años he estado involucrado laboralmente con la Universidad de los Andes, más específicamente he hecho parte de <a href="http://cupitaller.virtual.uniandes.edu.co/">cupitaller</a>, este es un espacio en el que enseño a estudiantes temas relacionados con programación orientada objetos.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 sinPadding">
+                                    <div class="box cajaEnlace">
+                                        <div class="box__circle box__circle--grey"></div>
+                                        <div class="box__icon">
+                                            <img class="enlace-foto" src="data/imagenes/uniandes.jpg" >
+                                        </div>
+                                        <p class="box__text texto_cajaEnlace">
+                                            Actualmente me encuentro en sexto semestre de Ingeniería de Sistemas en la <a href="http://uniandes.edu.co/">Universidad de los Andes</a>. Mi propósito académico al culminar mi carrera es continuar mis estudios y realizar la maestría en ingeniería de software.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 sinPadding">
+                                    <div class="box cajaEnlace">
+                                        <div class="box__circle box__circle--grey"></div>
+                                        <div class="box__icon">
+                                            <img class="enlace-foto" src="data/imagenes/gota2.png">
+                                        </div>
+                                        <!--<h1 class="box__headline">Headline</h1>-->
+                                        <p class="box__text texto_cajaEnlace">
+                                            En este momento desarrollo un proyecto para <a href="http://pruebapozo.net16.net/">Perforaciones Mesa.SAS</a>, una joven empresa de perforación de pozos de agua con presencia en Boyacá. Este proyecto aún se encuentra en una etapa prematura de desarrollo, sin embargo refleja algunas características de mi trabajo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-1 col-sm-1">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contacto">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 aos-item" data-aos="zoom-in">
+                    <h2 class="contacto-titulo aos-item__inner" data-aos-duration="2000">Entonces que opinas?</h2>
+                    <p class="contacto-texto">Si quieres contactarme y conocer más mi trabajo, no dudes en hacerlo por cualquiera de los medios que he dispuesto. Estaré atento para darte una pronta respuesta.</p>
+                    <a class="btn-contactame btn btn-lg btn-default " data-toggle="modal" data-target="#contactoModal" onclick="iniciarMail()">Contáctame</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1 col-sm-1">
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <p class="copyRight">Designed and developed by Luis Mesa</p>
+            </div>
+            <div class="col-md-5 col-sm-2">
+            </div>
+            <div class="col-md-2 col-sm-3">
+                <a href="https://twitter.com/luisMesa25" class="icono">
+                    <i class="ion-social-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/luis.fajardo.125323" class="icono">
+                    <i class="ion-social-facebook"></i>
+                </a>
+                <a href="https://github.com/LuisMesa" class="icono">
+                    <i class="ion-social-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/luis-andres-mesa-fajardo-1aa859124/" class="icono">
+                    <i class="ion-social-linkedin"></i>
+                </a>
+            </div>
+            <div class="col-md-1 col-sm-1">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="contactoModal" class="modal fade contacto-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        </div>
+        <div class="modal-body">
+            <form id="loginForm" novalidate="novalidate">
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="nombreContacto" placeholder="Nombre" title="Ingresa tu nombre">
+                            <span class="help-block"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6" id="iconosModal">
+                        <a href="https://twitter.com/luisMesa25" class="icono">
+                            <i class="ion-social-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/luis.fajardo.125323" class="icono">
+                            <i class="ion-social-facebook"></i>
+                        </a>
+                        <a href="https://github.com/LuisMesa" class="icono">
+                            <i class="ion-social-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/luis-andres-mesa-fajardo-1aa859124/" class="icono">
+                            <i class="ion-social-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" id="mailContacto" name="mail" placeholder="Tu email" required="" title="Email al que respondere">
+                            <span class="help-block"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-5">
+                        <a href="mailto:la.mesa10@uniandes.edu.co" class="correo">
+                            la.mesa10@uniandes.edu.co
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                            <textarea id="mensajeContacto" name="message" style="width:100%;height:60px;" placeholder="  Mensaje"></textarea>
+                        </div>
+                    </div>
+
+                <div class="row botones-enviar-cancelar">
+                    <div class="col-xs-3 col-sm-3">
+
+                    </div>
+                    <div class="col-xs-3 col-sm-3">
+                        <button type="submit" onclick="sendMail(); return false" class="btn btn-success" data-dismiss="modal">Enviar</button>
+
+                    </div>
+                    <div class="col-xs-3 col-sm-3">
+
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                    </div>
+                    <div class="col-xs-3 col-sm-3">
+
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/email.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/aos.js"></script>
+<script type="text/javascript" src="js/bubbles2.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

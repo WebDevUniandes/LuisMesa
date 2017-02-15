@@ -1,0 +1,288 @@
+html, body
+{
+    height: 100%;
+
+}
+
+#myCanvas
+{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #333;
+    width: 100%;
+}
+#canvasLenguajes
+{
+    /*z-index: -1;*/
+    position: fixed;
+    /*border: solid red 2px;*/
+    /*min-height: 1px;*/
+    /*padding-right: 15px;*/
+    /*padding-left: 15px;*/
+    /*width: 50%;*/
+
+}
+
+.principal
+{
+
+    color: #fff;
+    text-align: center;
+    display: table;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    min-height: 100%;
+}
+.principal-interna
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+.principal-texto
+ {
+     /*padding: 5%;*/
+     margin-bottom: 20px;
+     font-size: 16px;
+     font-weight: 300;
+     line-height: 1.4;
+ }
+.principal-titulo
+{
+    /*padding: 5%;*/
+    /*font-family: 'Roboto Condensed', sans-serif;*/
+}
+.btn-contactame, .btn
+{
+    border-radius: 0px!important;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+.info, .skills
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /*background-color: #ffffff;*/
+}
+.info-titulo, .skills-titulo, .contacto-titulo, .othersLinks-titulo
+{
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-bottom: 15px;
+
+    letter-spacing: 1px;
+    /*font-size: 24px;*/
+}
+#cajaPersonal
+{
+    /*Altura del elemento*/
+    margin-top: 20%;
+    padding: 150px 3em 3em;
+    box-shadow: 0 2px 4px transparent;
+}
+.skills-titulo
+{
+    letter-spacing: 0px!important;
+}
+.info-interna
+{
+
+}
+.info-texto, .skills-texto
+{
+    color:#727272;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.info-foto
+{
+    /*margin-top: 100px;*/
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /*margin-top: 300px;*/
+    /*viewBox="0 0 512 512"*/
+}
+
+.othersLinks
+{
+    /*background-color: #FCFCFC;*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+#habilidades
+{
+    min-height: 400px;
+}
+
+.cajaEnlace
+{
+    padding: 50px 2em 2em;
+}
+.texto_cajaEnlace
+{
+    line-height: 1.2;
+    font-size: 90%;
+}
+.enlace-foto
+{
+    /*margin-top: 10px;*/
+    width: 100px;
+    height: 100px;
+    border-radius: 50%
+}
+.contacto
+{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    min-height: 200px;
+    padding-bottom:50px;
+    margin-top: 40px;
+}
+.contacto-titulo
+{
+    padding-top: 30px;
+}
+.contacto-texto
+{
+    max-width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 23%;
+    padding-bottom: 20px;
+}
+.footer
+{
+    padding-top:15px;
+    padding-bottom:10px;
+
+    font-family: 'Roboto', sans-serif;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 300;
+
+}
+.copyRight
+{
+    font-size: 90%;
+}
+#iconosModal .icono
+{
+    padding-top: 0px;
+    font-size: 30px !important;
+    padding-left: 1px;
+    padding-right: 1px;
+    text-align: center!important;
+}
+.icono
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 150%;
+    color:#0f9976 ;
+}
+
+.correo
+{
+    font-size:90%;
+    text-align: center;
+    color:#0f9976 ;
+}
+.sinPadding
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+@media (max-width: 500px)
+{
+    .principal-interna
+    {
+        vertical-align: top;
+        /*height: 300px;*/
+    }
+    #myCanvas
+    {
+        /*height: 300px;*/
+    }
+    .principal
+    {
+        min-height: 30%;
+    }
+    .contacto-texto
+    {
+        max-width: 100%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .texto_cajaEnlace
+    {
+        line-height: 1.2;
+    }
+
+}
+@media (max-width: 800px)
+{
+    .correo
+    {
+        font-size:80%;
+        text-align: center;
+        color:#0f9976 ;
+    }
+    #iconosModal .icono
+    {
+        padding-left: 1px;
+        padding-right: 1px;
+        font-size: 100%;
+        color:#0f9976 ;
+    }
+}
+
+
+ .modal-dialog, .modal-content, .modal-header, .modal-body, .well
+{
+    background-color: #515658;
+    border-radius: 0px;
+    border-bottom: 0px;
+    color: #fff;
+}
+.modal-header
+{
+    height: 20px;
+    border-bottom: 0px;
+}
+.contacto-modal
+{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+.botones-enviar-cancelar
+{
+    padding-bottom: 10px;
+
+}
+textarea
+{
+    color: black;
+}
+::-webkit-scrollbar
+{
+    width: 12px;
+}
+::-webkit-scrollbar-track
+{
+    background-color: #eaeaea;
+    border-left: 1px solid #ccc;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #ccc;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background-color: #aaa;
+}
